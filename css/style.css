@@ -135,7 +135,7 @@
 }
 
 /*MAIN BODY*/
-/* GENERAL TAG AND CLASSES */
+/* GENERAL TAGS AND CLASSES */
 h1
 {
     font-size: 2.25rem;
@@ -461,6 +461,20 @@ p
         line-height: 24px;
     }
 
+    .visible_close_bg
+    {
+        position: absolute;
+        background: rgba(0,0,0,0.25);
+        backdrop-filter: blur(2px);
+        height: 100vh;
+        width: 100vh;
+        top: 0%;
+        right: 0%;
+        z-index: 2;
+        opacity: 1.0;
+        transition: 1.1s ease;
+    }
+
     .close_bg
     {
         position: absolute;
@@ -469,8 +483,9 @@ p
         height: 100vh;
         width: 100vh;
         top: 0%;
-        right: -500%;
-        z-index: 2;
+        right: 0%;
+        z-index: -1;
+        opacity: 0.0;
     }
 
     .nav_bar .fas

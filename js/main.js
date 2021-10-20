@@ -11,14 +11,16 @@ const toggleMenu = (menuStatus) =>
         disableScroll();
         navLinks.style.right = '0%';
         setTimeout(function () {
-            closeBG.style.right = '0%';
-        }, 750);
+            closeBG.classList.add('visible_close_bg');
+            closeBG.classList.remove('close_bg');
+        }, 250);
     }
     else
     {
         enableScroll();
         navLinks.style.right = '-200%';
-        closeBG.style.right = '-500%';
+        closeBG.classList.remove('visible_close_bg');
+        closeBG.classList.add('close_bg');
     }
 }
 
