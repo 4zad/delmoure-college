@@ -1,3 +1,11 @@
+/*
+    =================================================
+    Author: 4zad (Muhammad Ahmed)
+    Copyright (c) 2021 4zad.
+    All rights reserved.
+    =================================================
+*/
+
 let navLinks = document.getElementById('nav-links');
 let closeBG = document.querySelector('.close_bg');
 
