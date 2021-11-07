@@ -624,12 +624,11 @@ p
     font-weight: 500;
 }
 
-.about_us
+.about
 {
     width: 80%;
     margin: auto;
     padding: 40px 0px;
-
 }
 
 .about_column
@@ -653,6 +652,11 @@ p
     padding: 16px 0px;
 }
 
+.about_column img
+{
+    padding-top: 16px;
+}
+
 .orange_button
 {
     border: 1px solid #f44336;
@@ -672,3 +676,5 @@ p
         flex-direction: column;
     }
 }
+
+
