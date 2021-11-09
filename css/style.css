@@ -448,7 +448,7 @@ p
 /* HERO BANNER */
 .sub_header
 {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/background.jpg);
     background-position: center;
@@ -456,11 +456,8 @@ p
     text-align: center;
     color: #fff;
     position: relative;
-    overflow: hidden;
     /* 
-    "position: relative" is very important for "overflow-x: hidden" to properly 
-    work at stopping horizontal scrolling due to the responsive vertical nav bar.
-    "overflow-x: hidden" works to stop overflow only in the horizontal direction.
+    "position: relative" is very important. It enables the translation and tranformation properties in the "hero_textbox" class to work relative to the size of the parent container, rather than relative to the display size.
     */
 }
 
@@ -475,18 +472,19 @@ p
 {
     width: 80%;
     margin: auto;
-    padding: 40px 0px;
+    padding: 50px 0px;
 }
 
 .about_column
 {
     flex-basis: 47%;
-    padding: 32px 0px;
+    padding: 24px 0px;
 }
 
 .about_column img
 {
     width: 100%;
+    margin-top: 16px;
 }
 
 .about_column h1
@@ -497,11 +495,6 @@ p
 .about_column p
 {
     padding: 16px 0px;
-}
-
-.about_column img
-{
-    margin-top: 16px;
 }
 
 .orange_button
@@ -590,7 +583,7 @@ p
 .comment_form input, .comment_form textarea
 {
     width: 100%;
-    margin: 16px 0px;
+    margin: 12px 0px;
     padding: 12px;
     box-sizing: border-box;
     border: none;
@@ -603,6 +596,91 @@ p
     margin-bottom: 32px;
     resize: none;
 }
+
+.location
+{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px 100px;
+}
+
+.location iframe
+{
+    width: 100%;
+}
+
+.contact
+{
+    width: 80%;
+    margin: auto;
+}
+
+.contact_column:nth-child(1)
+{
+    flex-basis: 30%;
+}
+
+.contact_column:nth-child(2)
+{
+    flex-basis: 55%;
+}
+
+.contact_column div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact_column > div > .fas
+{
+    flex: 1;
+    font-size: 2rem;
+    color: #f44336;
+    padding: 12px 24px 12px 12px;
+}
+
+.contact_column > div > span
+{
+    flex: 7;
+}
+
+.contact_column p
+{
+    padding: 0;
+}
+
+.contact_column h5, #contact-form-header h5
+{
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    color: #555;
+    font-weight: 400;
+}
+
+#contact-form-header
+{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.email_form input, .email_form textarea
+{
+    width: 100%;
+    margin: 0px 0px 24px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.email_form textarea
+{
+    margin-bottom: 32px;
+    resize: none;
+}
+
+
 
 
 
@@ -698,7 +776,10 @@ p
 
     #nav-links
     {
-        position: absolute;
+        position: fixed;
+        /* 
+        "position: fixed" works at stopping horizontal scrolling due to the responsive vertical nav bar. The nav bar is on the very right when not being used and thus, creates a horizontal scoll bar. However, with "position: fixed" the fixed element, which is the responsive vertical nav bar in this case, does not leave a gap in the page where it would normally have been located. Thus, no horizontal scroll bar.
+        */;
         background: #f44336;
         height: 100vh;
         width: 450px;
@@ -763,3 +844,5 @@ p
         font-size: 0.9rem;
     }
 }
+
+
