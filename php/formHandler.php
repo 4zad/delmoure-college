@@ -1,22 +1,44 @@
 <?php
-$name = $_POST[`name`];
-$visitor_email = $_POST[`email`];
-$subject = $_POST[`subject`];
-$message = $_POST[`message`];
+if (empty($_POST["message"]))
+{
+    $errors .= `\n ERROR: All fields are required`;
+}
+else if (empty($errors))
+{
+    //email of inquiry to myself
+    $name = $_POST[`name`];
+    $visitor_email = $_POST[`email`];
+    $subject = $_POST[`subject`];
+    $message = $_POST[`message`];
 
-$email_from = `info@delmourequeries.com`;
-$email_subject = `New Inquiry Recieved`;
-$email_body = `Visitor Name: $name\n`.
-                `Visitor Email: $visitor_email\n`.
-                `Subject: $subject\n`.
-                `Message: $message`;
+    $email_from = `info@frosty-feynman-de2855.netlify.app`;
+    $email_subject = `New Inquiry Recieved From $name`;
+    $email_body = `Visitor Name: $name\n`.
+                    `Visitor Email: $visitor_email\n`.
+                    `Subject: $subject\n`.
+                    `Message: $message`;
 
-$to = `enchanted.azad@gmail.com`; //email made for the purposes of this project
+    $to = `enchanted.azad@gmail.com`; //email made for the purposes of this project
 
-$headers = `From: $email_from \r\n`;
-$headers .= `Reply-To: $visitor_email \r\n`;
+    $headers = `From: $email_from \r\n`;
+    $headers .= `Reply-To: $visitor_email \r\n`;
 
-mail($to,$email_subject,$email_body,$headers)
+    mail($to,$email_subject,$email_body,$headers);
+    //-----------------------------
 
-header(`Location: contact.html`);
+    //confirmation email to visitor
+    $email_subject = `Inquiry Confirmation`;
+    $email_body = `Thank you for your inquiry to Delmoure College! We will get back to you as soon as time permits.\n\n
+    Here is a copy of your message:\n$message`;
+    $to = `$visitor_email`;
+
+    mail($to,$email_subject,$email_body,$headers);
+    //-----------------------------
+    
+    //redirect to the contact.html page
+    //'Location' could be changed to a seperate thank you page, such as 'thankyou.html'
+    header(`Location: ../html/contact.html`);
+}
 ?>
+
+
