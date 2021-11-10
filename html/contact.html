@@ -101,9 +101,13 @@
                 </div>
 
                 <div class="contact_column">
-                    <form action="../php/formHandler.php" method="post" class="email_form">
+                    <form action="https://formsubmit.co/enchanted.azad@gmail.com" method="POST" class="email_form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="contact.html">
+                        <input type="hidden" name="_subject" value="New Inquiry">
+                        <input type="hidden" name="_autoresponse" value="Your inquiry was received. Thank you!">
                         <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
                         <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" required>
                         <textarea name="message" id="message" rows="7" placeholder="Enter Your Message"></textarea required>
                         <button type="submit" class="hero_button orange_button">SEND</button>

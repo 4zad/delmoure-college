@@ -1,4 +1,7 @@
+<!-- PHP below works to add functionality to form submission if the site were hosted on a custom domain -->
+
 <?php
+/* 
 if (empty($_POST["message"]))
 {
     $errors .= `\n ERROR: All fields are required`;
@@ -39,6 +42,7 @@ else if (empty($errors))
     //'Location' could be changed to a seperate thank you page, such as 'thankyou.html'
     header(`Location: ../html/contact.html`);
 }
+*/
 ?>
 
 
