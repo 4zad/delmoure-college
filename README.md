@@ -30,7 +30,7 @@ My focus for this project was to ensure the website was responsive, accessible o
 #### Final Mockups
 
 ![Getting Started](markdown-files/iMac.png)
-![Getting Started](markdown-files/MAcbook.png)
+![Getting Started](markdown-files/Macbook.png)
 ![Getting Started](markdown-files/iPhone.png)
 
 
