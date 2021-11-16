@@ -32,6 +32,7 @@ My focus for this project was to ensure the website was responsive, accessible o
 ![Getting Started](markdown-files/iMac.png)
 ![Getting Started](markdown-files/Macbook.png)
 ![Getting Started](markdown-files/iPhone.png)
+![Getting Started](markdown-files/iPhone-2.png)
 
 
 
