@@ -7,7 +7,7 @@
 [Technologies](#Technologies)\
 [Workflow](#Workflow)\
 [Author](#Author)\
-[License & Copyright](#License%20&%20Copyright)
+[License and Copyright](#License%20and%20Copyright)
 
 
 
@@ -81,7 +81,7 @@ Once my website was designed, I moved on to coding it. Starting off with the 'Ho
 
 
 ---
-## License & Copyright
+## License and Copyright
 
 Copyright © 2021 Muhammad Ahmed (4zad).
 All rights reserved.
