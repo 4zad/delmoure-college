@@ -4,17 +4,18 @@
 
 ## Table of Contents
 [Description](#Description)\
+[Instructions](#Instructions)\
 [Technologies](#Technologies)\
 [Workflow](#Workflow)\
 [Author](#Author)\
-[License and Copyright](#License%20and%20Copyright)
+[License & Copyright](#License%20&%20Copyright)
 
 
 
 ---
 ## Description
 
-A responsive, mock college website made from scratch using vanilla HTML5, CSS, and JavaScript; with proper semantics, good front-end practices, and a great design. 
+A responsive, mock college website made from scratch using vanilla HTML5, CSS, and JavaScript; with proper semantics, good front-end practices, and a great design. The website is littered with pleasing animations and also includes a working contact form.
 
 #### Inspiration
 
@@ -34,6 +35,14 @@ My focus for this project was to ensure the website was responsive, accessible o
 ![Getting Started](markdown-files/Macbook.png)
 ![Getting Started](markdown-files/iPhone.png)
 ![Getting Started](markdown-files/iPhone-2.png)
+
+
+
+---
+## Instructions
+
+Follow the link below to check the website out:
+
 
 
 
@@ -81,10 +90,13 @@ Once my website was designed, I moved on to coding it. Starting off with the 'Ho
 
 
 ---
-## License and Copyright
+## License & Copyright
 
 Copyright © 2021 Muhammad Ahmed (4zad).
 All rights reserved.
 
 
 
+---
+**THIS PROJECT IS NOW FINISHED AND ARCHIVED**
+---
