@@ -85,7 +85,7 @@ Once my website was designed, I moved on to coding it. Starting off with the 'Ho
 ---
 ## Author
 
-- Muhammad Ahmed (4zad) <mahmed224@myseneca.ca>
+- Muhammad Ahmed (4zad) <dev.moahmed@gmail.com>
 
 
 
@@ -99,4 +99,3 @@ All rights reserved.
 
 ---
 **THIS PROJECT IS NOW FINISHED AND ARCHIVED**
----
