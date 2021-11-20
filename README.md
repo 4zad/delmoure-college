@@ -41,8 +41,7 @@ My focus for this project was to ensure the website was responsive, accessible o
 ---
 ## Instructions
 
-Follow the link below to check the website out:
-
+Click [here](https://4zad.github.io/delmoure-college/) to check out the website.
 
 
 
@@ -69,7 +68,7 @@ It involved the use of various plugins as well, including:
 
 
 ---
-# Workflow
+## Workflow
 
 My first action was to create a colour palette that would fit the college website and I decided to go with complementary colours blue and orange as the base colours for my colour palette. 
 
@@ -98,4 +97,4 @@ All rights reserved.
 
 
 ---
-**THIS PROJECT IS NOW FINISHED AND ARCHIVED**
+*THIS PROJECT IS NOW FINISHED AND ARCHIVED*
